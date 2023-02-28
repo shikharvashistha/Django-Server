@@ -16,5 +16,5 @@ urlpatterns = [
     path('user/<int:userID>/sip/<int:sipID>/assets/add/', UserSIPAssetsAdd.as_view(), name='usersipassetsadd'),
     path('fixed/assets/', GetFixedAssets.as_view(), name='fixedassets'),
     path('sip/cronjob/', SIPCronJob.as_view(), name='sipcronjob'),
-    path('/', Status.as_view(), name='status'),
+    path('status/', Status.as_view(), name='status'),
 ]
