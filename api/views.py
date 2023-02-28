@@ -338,4 +338,4 @@ class SIPCronJob(APIView):
         schedule.every().day.at("00:00").do(job)
         return Response({"message": "Cron job scheduled successfully"}, status=status.HTTP_200_OK)
 
-job()
+#job()
